@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7e4ca;
+}
+
+header {
+  text-align: center;
+  background: #511a02;
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+}
+
+.buttons {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #511a02;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons:hover {
+  background: #f8f3ea;
+  color: #511a02;
+  border: 1px solid #511a02;
+}
+
+#destinationCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  height: 400px;
+  justify-content: space-around;
+  background: #f8f3ea;
+  border-radius: 10px;
+  border: 1px solid #511a02;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 8px;
+}
+
+.card-body h3 {
+  margin: 0 0 5px 0;
+  color: #100368;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #060000;
+  min-height: 20px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: white;
+}
+
+.tag.continent { background: #8c3f2e;}
+.tag.weather { background: #b06228; }
+
+.price {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #100368;
+}
